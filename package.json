@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "preview-storybook": "storybook dev -p 6009",
+    "deploy:storybook": "npm run build-storybook && vercel --prod --yes"
   },
   "dependencies": {
     "react": "^19.1.1",
